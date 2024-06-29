@@ -115,6 +115,9 @@ body {
     letter-spacing: 0.20rem;
     margin-top: 50px;
     margin-bottom: 20px;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
     max-width: 880px;
 }
 
@@ -126,7 +129,7 @@ body {
 
 #title.darker-title {
     animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
-               darker-animated-cursor 750ms steps(11, end) infinite;
+        darker-animated-cursor 750ms steps(11, end) infinite;
 }
 
 /* text animation */
@@ -356,6 +359,21 @@ form button {
     transition: 1s;
     transform: translateY(45rem) rotateZ(45deg);
     opacity: 0;
+}
+
+.github-corner svg {
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    border: 0;
+    left: 25px;
+    transform: rotate(-45deg);
+    cursor: auto;
+}
+
+.github-corner svg path
+{
+    cursor: pointer;
 }
 
 /* Responsive design */
