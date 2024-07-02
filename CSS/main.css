@@ -300,8 +300,11 @@ form button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25em 0.5em;
-    border-radius: 30px;
+    padding: 0.35em 0.5em;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 12px;
     transition: background-color 200ms ease-in-out;
 }
 
