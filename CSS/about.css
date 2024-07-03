@@ -10,7 +10,6 @@
 
 /* HEADER ADDED */
 
-/*menu header*/
 .collapse {
     display: block;
 }
@@ -28,8 +27,6 @@
     -o-transition: all 0.4s;
 }
 
-
-
 .btn:hover {
     box-shadow: 0px 25px 18px -6px rgba(0, 0, 0, 0.2);
     background-color: #63b2fc;
@@ -40,12 +37,19 @@
 /*menu header*/
 .header {
     padding: 30px 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header #navbar .header__elenco li a {
+    text-decoration: none;
 }
 
 .header__elenco {
     padding: 0;
+
     margin: 0;
     list-style: none;
+    font-size: 20px;
 }
 
 .header__menu {
@@ -69,7 +73,7 @@
 }
 
 .header__title {
-    font-size: 18px;
+    font-size: 30px;
     margin: 0;
     margin-left: 10px;
     display: inline-block;
@@ -83,7 +87,7 @@
 
 .header__link {
     color: #1f4568;
-    font-size: 14px;
+    font-size: 17px;
 
 }
 
@@ -129,7 +133,7 @@
 
 /* Typography */
 /**************************/
-#parallax-world-of-ugg h1 {
+#content-blocks h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -139,7 +143,7 @@
     margin: 0;
 }
 
-#parallax-world-of-ugg h2 {
+#content-blocks h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 70px;
     letter-spacing: 10px;
@@ -151,7 +155,7 @@
     opacity: .9;
 }
 
-#parallax-world-of-ugg h3 {
+#content-blocks h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
     line-height: 0;
@@ -161,7 +165,7 @@
     color: black;
 }
 
-#parallax-world-of-ugg p {
+#content-blocks p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -193,21 +197,27 @@
 
 /* Section - Title */
 /**************************/
-#parallax-world-of-ugg .title {
+#content-blocks .title {
     background: white;
     padding: 60px;
     margin: 0 auto;
     text-align: center;
 }
 
-#parallax-world-of-ugg .title h1 {
+#content-blocks .title h1 {
     font-size: 35px;
     letter-spacing: 8px;
 }
 
+#content-blocks .title h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+}
+
 /* Section - Block */
 /**************************/
-#parallax-world-of-ugg .block {
+#content-blocks .block {
     background: white;
     padding: 60px;
     width: 820px;
@@ -215,12 +225,12 @@
     text-align: justify;
 }
 
-#parallax-world-of-ugg .block-gray {
+#content-blocks .block-gray {
     background: #f2f2f2;
     padding: 60px;
 }
 
-#parallax-world-of-ugg .section-overlay-mask {
+#content-blocks .section-overlay-mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -232,13 +242,13 @@
 
 /* Section - Parallax */
 /**************************/
-#parallax-world-of-ugg .parallax-one {
+#content-blocks .block-one {
     padding-top: 200px;
     padding-bottom: 200px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=);
+    background-image: url(../imgs/block_one_img.jpeg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -247,13 +257,13 @@
     background-position: top center;
 }
 
-#parallax-world-of-ugg .parallax-two {
+#content-blocks .block-two {
     padding-top: 200px;
     padding-bottom: 200px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+    background-image: url(../imgs/block-two-img.gif);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -262,13 +272,13 @@
     background-position: center center;
 }
 
-#parallax-world-of-ugg .parallax-three {
+#content-blocks .block-three {
     padding-top: 200px;
     padding-bottom: 200px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+    background-image: url(../imgs/block-three.gif);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -279,7 +289,7 @@
 
 /* Extras */
 /**************************/
-#parallax-world-of-ugg .line-break {
+#content-blocks .line-break {
     border-bottom: 1px solid black;
     width: 150px;
     margin: 0 auto;
@@ -320,36 +330,36 @@
 /* Media Queries */
 /**************************/
 @media screen and (max-width: 959px) and (min-width: 768px) {
-    #parallax-world-of-ugg .block {
+    #content-blocks .block {
         padding: 40px;
         width: 620px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    #parallax-world-of-ugg .block {
+    #content-blocks .block {
         padding: 30px;
         width: 420px;
     }
 
-    #parallax-world-of-ugg h2 {
+    #content-blocks h2 {
         font-size: 30px;
     }
 
-    #parallax-world-of-ugg .block {
+    #content-blocks .block {
         padding: 30px;
     }
 
-    #parallax-world-of-ugg .parallax-one,
-    #parallax-world-of-ugg .parallax-two,
-    #parallax-world-of-ugg .parallax-three {
+    #content-blocks .block-one,
+    #content-blocks .block-two,
+    #content-blocks .block-three {
         padding-top: 100px;
         padding-bottom: 100px;
     }
 }
 
 @media screen and (max-width: 479px) {
-    #parallax-world-of-ugg .block {
+    #content-blocks .block {
         padding: 30px 15px;
         width: 290px;
     }
