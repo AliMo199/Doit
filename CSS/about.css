@@ -24,7 +24,8 @@ body {
 }
 
 .btn {
-    background-color: #3a9fff;
+    font-family: "Saira", sans-serif;
+    background-color: #01014e;
     border-radius: 20px;
     padding: 10px 25px;
     color: #fff;
@@ -38,7 +39,7 @@ body {
 
 .btn:hover {
     box-shadow: 0px 25px 18px -6px rgba(0, 0, 0, 0.2);
-    background-color: #63b2fc;
+    background-color: rgb(16, 16, 146);
     color: #fff;
     cursor: pointer;
 }
@@ -46,7 +47,7 @@ body {
 /*menu header*/
 .header {
     padding: 30px 25px 0 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Saira", sans-serif;
 }
 
 .header #navbar .header__elenco li a {
@@ -82,6 +83,8 @@ body {
 }
 
 .header__title {
+    font-family: "Saira", sans-serif;
+    color: #01014e;
     font-size: 30px;
     margin: 0;
     margin-left: 2px;
@@ -90,12 +93,12 @@ body {
     vertical-align: middle;
 }
 
-.header__light {
+/* .header__light {
     color: #8198ae;
-}
+} */
 
 .header__link {
-    color: #1f4568;
+    color: #01014e;
     font-size: 17px;
 }
 
@@ -104,9 +107,9 @@ body {
     color: #3a9fff;
 }
 
-.navbar-toggle .icon-bar {
+/* .navbar-toggle .icon-bar {
     background-color: #8198ae;
-}
+} */
 
 /* HEADER ADDED */
 
@@ -128,22 +131,22 @@ body {
 /* Typography */
 /**************************/
 #content-blocks h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+    font-family: "Saira", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
     text-transform: uppercase;
-    color: black;
+    color: #01014e;
     padding: 0;
     margin: 0;
 }
 
 #content-blocks h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Saira", sans-serif;
     font-size: 70px;
     letter-spacing: 10px;
     text-align: center;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     z-index: 10;
     opacity: .9;
@@ -151,34 +154,37 @@ body {
 }
 
 #content-blocks h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Saira", sans-serif;
     font-size: 14px;
     line-height: 0;
     font-weight: 400;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    color: black;
+    color: #01014e;
 }
 
 #content-blocks p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 24px;
+    border-left: gray 7px solid;
+    padding: 0px 10px;
+    color: black;
 }
 
-.first-character {
+/* .first-character {
     font-weight: 400;
     float: left;
     font-size: 84px;
-    line-height: 64px;
+    line-height: 55px;
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
     font-family: 'Source Sans Pro', sans-serif;
-}
+} */
 
-.sc {
+/* .sc {
     color: #3b8595;
 }
 
@@ -188,12 +194,11 @@ body {
 
 .atw {
     color: #c48660;
-}
+} */
 
 /* Section - Title */
 /**************************/
 #content-blocks .title {
-    background: white;
     padding: 60px;
     margin: 0 auto;
     text-align: center;
@@ -205,19 +210,15 @@ body {
 }
 
 #content-blocks .title h5 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    width: 1000px;
+    font-family: "Saira", sans-serif;
+    font-size: 25px;
+    width: 75rem;
     margin: 50px auto 0;
     font-weight: 400;
 }
 
 /* Section - Block */
 /**************************/
-
-#content-blocks {
-    font-size: 20px;
-}
 
 #content-blocks .block {
     background: white;
