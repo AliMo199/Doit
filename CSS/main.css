@@ -14,6 +14,7 @@ body {
 }
 
 /* Body light or darker themes */
+/* Standard Theme */
 .standard {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -22,6 +23,7 @@ body {
     overflow: hidden;
 }
 
+/* Standard Theme Animation */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -36,19 +38,21 @@ body {
     }
 }
 
-
+/* Light Theme */
 .light {
     background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
     color: #1a150e;
     transition: 0.3s linear;
 }
 
+/* Dark Theme */
 .darker {
     background-image: linear-gradient(100deg, #001214, #001f29);
     color: white;
     transition: 0.3s linear;
 }
 
+/* Header, Form, Date and Time sections arrangement */
 #header,
 #form,
 #datetime {
@@ -57,6 +61,7 @@ body {
     width: 100%;
 }
 
+/* Header parent div */
 #header {
     display: flex;
     flex-direction: column;
@@ -81,7 +86,7 @@ body {
     border-radius: 100%;
     height: 35px;
     margin: 0 8px;
-    transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+    transition: transform 150ms ease-in-out, box-shadow 200ms ease-in-out;
     width: 35px;
 }
 
@@ -107,7 +112,7 @@ body {
     background-image: linear-gradient(100deg, #001214, #001f29);
 }
 
-/* Animation */
+/* Header Title */
 #title {
     border-right: solid 3px rgba(0, 0, 0, 0.75);
     white-space: pre;
@@ -121,19 +126,19 @@ body {
     max-width: 880px;
 }
 
-/* Animation */
+/* Standard, Light Theme title Animation */
 #title {
     animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
         animated-cursor 750ms steps(11, end) infinite;
 }
 
+/* Dark Theme title Animation */
 #title.darker-title {
     animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
         darker-animated-cursor 750ms steps(11, end) infinite;
 }
 
-/* text animation */
-
+/* Text Animation */
 @keyframes animated-text {
     from {
         width: 0%;
@@ -144,8 +149,7 @@ body {
     }
 }
 
-/* cursor animations */
-
+/* Cursor Animations */
 @keyframes animated-cursor {
     from {
         border-right-color: rgba(0, 0, 0, 0.75);
@@ -166,6 +170,7 @@ body {
     }
 }
 
+/* Input Form Styling */
 form {
     display: flex;
     font-size: 1.7rem;
@@ -180,7 +185,7 @@ form input {
     font-size: 17px;
     border: none;
     outline: none;
-    border-top-left-radius: 2px;
+    border-top-left-radius: 5px;
     border-bottom-left-radius: 12px;
     max-width: 500px;
     transition: background-color 200ms ease-in-out;
@@ -192,7 +197,6 @@ form input.standard-input {
     background-color: #181a1a;
     color: rgb(247, 226, 223);
 }
-
 
 form input.light-input {
     background-color: #AEB1B4;
@@ -230,10 +234,19 @@ form input.darker-input:hover {
     background-color: #013141;
 }
 
+/* Submit Button Styling */
 button {
     border: none;
     outline: none;
     transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+}
+
+form button {
+    padding: 10px;
+    font-size: 18px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 5px;
+    min-width: 100px;
 }
 
 button:hover {
@@ -270,14 +283,7 @@ button.darker-button:hover {
     background-color: #001f29;
 }
 
-form button {
-    padding: 10px;
-    font-size: 18px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 2px;
-    min-width: 100px;
-}
-
+/* Tasks Parent Div */
 #myUnOrdList {
     display: flex;
     justify-content: center;
@@ -285,41 +291,24 @@ form button {
     max-width: 1200px;
 }
 
+/* List of tasks (ul) */
 .todo-list {
     min-width: 25%;
-
-    /* To remove the bullets of unordered list */
     list-style: none;
 }
 
 .todo {
     margin: 1rem;
-    /* background: rgb(247, 226, 223); */
-    /* color: black; */
     font-size: 19px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.35em 0.5em;
-    border-top-left-radius: 2px;
+    border-top-left-radius: 5px;
     border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 5px;
     border-top-right-radius: 12px;
     transition: background-color 200ms ease-in-out;
-}
-
-/* Items themes */
-.standard-todo {
-    background-color: rgb(26, 27, 27);
-    color: #f0f0f0;
-}
-
-.light-todo {
-    background-color: #AEB1B4;
-}
-
-.darker-todo {
-    background-color: #01394c;
 }
 
 .todo li {
@@ -328,7 +317,6 @@ form button {
     flex: 1;
     /* To push the trash and the check button to the right */
     border-radius: 30px;
-
     /* wraps the links */
     overflow-wrap: anywhere;
 }
@@ -364,6 +352,21 @@ form button {
     opacity: 0;
 }
 
+/* Task themes */
+.standard-todo {
+    background-color: rgb(26, 27, 27);
+    color: #f0f0f0;
+}
+
+.light-todo {
+    background-color: #AEB1B4;
+}
+
+.darker-todo {
+    background-color: #01394c;
+}
+
+/* Github Link Icon */
 .github-corner svg {
     color: #fff;
     position: absolute;
@@ -374,19 +377,19 @@ form button {
     cursor: auto;
 }
 
-.github-corner svg path
-{
+.github-corner svg path {
     cursor: pointer;
 }
 
+/* About Page Link Icon */
 .about-page {
-    position: absolute;
-    right: 40px;
-    bottom: 30px;
+    margin-top: auto;
     font-size: 35px;
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    width: 93%;
+    padding-bottom: 35px;
 }
 
 .about-page a:hover {
@@ -407,8 +410,7 @@ form button {
     }
 
     #title {
-        animation:
-            animated-text 3s steps(16, end) 0.5s 1 normal both,
+        animation: animated-text 3s steps(16, end) 0.5s 1 normal both,
             animated-cursor 750ms steps(16, end) infinite;
         margin-bottom: 10px;
         margin-top: 30px;
@@ -416,16 +418,29 @@ form button {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     #header {
         font-size: 1.5rem;
     }
 
     #title {
-        animation:
-            animated-text 3.5s steps(16, end) 0.5s 1 normal both,
+        animation: animated-text 3.5s steps(16, end) 0.5s 1 normal both,
             animated-cursor 750ms steps(16, end) infinite;
-        max-width: 255px;
+        max-width: 350px;
+        font-size: 16px;
+        margin-top: 150px;
+    }
+
+    .flexrow-container {
+        top: 50px;
+        flex-direction: row;
+        align-items: flex-end;
+        right: 15px;
+        position: absolute;
+    }
+
+    .theme-selector {
+        margin-bottom: 10px;
     }
 }
 
