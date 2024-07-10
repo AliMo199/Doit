@@ -381,6 +381,37 @@ button.darker-button:hover {
     cursor: pointer;
 }
 
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 /* About Page Link Icon */
 .about-page {
     margin-top: auto;
@@ -389,7 +420,8 @@ button.darker-button:hover {
     display: flex;
     justify-content: flex-end;
     width: 93%;
-    padding-bottom: 35px;
+    padding-bottom: 2.5rem;
+    padding-right: 1rem;
 }
 
 .about-page a:hover {
@@ -462,5 +494,16 @@ button.darker-button:hover {
 
     form>button.light-button {
         box-shadow: 0 0 5px lightgray;
+    }
+}
+
+/* Github Icon Responsive */
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
     }
 }
